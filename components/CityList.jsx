@@ -10,7 +10,10 @@ export default function CityList() {
             <View>
                 {data.cities.map(city => <CityCard 
                 key={city.id} 
-                title={city.title}/>)}
+                title={city.title}
+                image={city.image}
+                />
+                )}
             </View>
         </View>
     )
@@ -21,6 +24,7 @@ const styles = {
         textAlign: "center", 
         fontSize: 30, 
         fontWeight: 600,
+        paddingBottom: 30,
     },
     body: {
         paddingTop: 70,
