@@ -1,6 +1,6 @@
 import { View, Text, ScrollView } from "react-native";
 import data from '../data.json';
-import CityCard from "./CityCard";
+import CityCard from "./CityCard.jsx";
 
 
 export default function CityList() {
