@@ -2,38 +2,38 @@
     "cities": [
       {
         "id": 1,
-        "title": "Париж",
-        "description": "Романтичната столица на Франция, известна с Айфеловата кула, изкуството и модата.",
+        "title": "Paris",
+        "description": "The romantic capital of France, famous for the Eiffel Tower, art, and fashion.",
         "image": "https://example.com/images/paris.jpg",
-        "country": "Франция"
+        "country": "France"
       },
       {
         "id": 2,
-        "title": "Рим",
-        "description": "Древен град с богата история, Колизеума и Ватикана.",
+        "title": "Rome",
+        "description": "An ancient city rich in history, home to the Colosseum and the Vatican.",
         "image": "https://example.com/images/rome.jpg",
-        "country": "Италия"
+        "country": "Italy"
       },
       {
         "id": 3,
-        "title": "Барселона",
-        "description": "Известен с архитектурата на Гауди, плажовете и оживения нощен живот.",
+        "title": "Barcelona",
+        "description": "Known for Gaudí’s architecture, beautiful beaches, and vibrant nightlife.",
         "image": "https://example.com/images/barcelona.jpg",
-        "country": "Испания"
+        "country": "Spain"
       },
       {
         "id": 4,
-        "title": "Прага",
-        "description": "Приказен град с красива стара част, мостове и замъци.",
+        "title": "Prague",
+        "description": "A fairy-tale city with a stunning old town, bridges, and castles.",
         "image": "https://example.com/images/prague.jpg",
-        "country": "Чехия"
+        "country": "Czech Republic"
       },
       {
         "id": 5,
-        "title": "Истанбул",
-        "description": "Град на два континента с уникална смесица от култури и история.",
+        "title": "Istanbul",
+        "description": "A city spanning two continents, offering a unique blend of cultures and history.",
         "image": "https://example.com/images/istanbul.jpg",
-        "country": "Турция"
+        "country": "Turkey"
       }
     ]
   }

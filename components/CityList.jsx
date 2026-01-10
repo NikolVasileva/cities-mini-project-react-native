@@ -8,7 +8,9 @@ export default function CityList() {
         <View style={styles.body}>
             <Text style={styles.title}>Cities</Text>
             <View>
-                {data.cities.map(city => <CityCard key={city.id} title={city.title}/>)}
+                {data.cities.map(city => <CityCard 
+                key={city.id} 
+                title={city.title}/>)}
             </View>
         </View>
     )

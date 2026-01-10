@@ -1,9 +1,11 @@
 import { Text, View } from "react-native";
 
-export default function CityCard(props) {
+export default function CityCard({
+    title,
+}) {
     return(
         <View>
-            <Text>{props.title}</Text>
+            <Text>{title}</Text>
         </View>
     )
 }
