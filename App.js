@@ -8,10 +8,11 @@ export default function App() {
   const [selectedCity, setSelectedCity] = useState(null)
 
   const cityPressHandler = (cityId) => {
-    setSelectedCity(cityId)
+    const city = data.cities.find(city => city.id === cityId)
+    setSelectedCity(city)
 }
   return (
-    selectedCity ? <CityDetails /> :
+    selectedCity ? <CityDetails city={selectedCity}/> :
     <CityList cities={data.cities} cityPressHandler={cityPressHandler}/>
   );
 }
