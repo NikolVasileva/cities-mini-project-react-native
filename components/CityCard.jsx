@@ -3,7 +3,8 @@ import { Button, Image, Text, TouchableOpacity, View } from "react-native";
 export default function CityCard({
     title,
     image,
-    country
+    country,
+    onPress
 }) {
     return (
         <View style={styles.card}>
@@ -20,7 +21,7 @@ export default function CityCard({
                 <Text style={styles.title}>{title}</Text>
                 <Text style={{paddingBottom: 10}}>{country}</Text>
 
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} onPress={onPress}>
                     <Text style={styles.buttonText}>Details</Text>
                 </TouchableOpacity>
 

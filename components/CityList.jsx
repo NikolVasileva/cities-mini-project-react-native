@@ -3,7 +3,7 @@ import data from '../data.json';
 import CityCard from "./CityCard.jsx";
 
 
-export default function CityList() {
+export default function CityList({cityPressHandler}) {
     return (
         <View style={styles.body}>
             <Text style={styles.title}>Cities</Text>
@@ -13,6 +13,7 @@ export default function CityList() {
                 title={city.title}
                 image={city.image}
                 country={city.country}
+                onPress={cityPressHandler}
                 />
                 )}
             </ScrollView>
