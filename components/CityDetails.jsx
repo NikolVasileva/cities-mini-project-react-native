@@ -1,18 +1,23 @@
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 
 export default function CityDetails(props) {
     return(
         <View style={styles.detailsContainer}>
             <Text style={styles.title}>{props.city.title}</Text>
-            <View style={{ paddingRight: 15 }}>
+            <View>
                 <Image
                     style={{ borderRadius: 5 }}
                     source={{
                         uri: props.city.image,
-                        width: 150,
-                        height: 148,
+                        width: 320,
+                        height: 230,
                     }} />
             </View>
+            <Text>Country: {props.city.country}</Text>
+            <Text>{props.city.description}</Text>
+            <TouchableOpacity style={styles.button} onPress={() => onPress(id)}>
+                <Text style={styles.buttonText}>Go Back</Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -22,10 +27,23 @@ const styles = {
         alignItems: 'center',
         gap: 10, 
         marginTop: 70,
+        padding: 30,
     },
     title: {
-        fontSize: 20,
-        fontWeight: 600,
+        fontSize: 22,
+        fontWeight: "bold",
+    },
+    button: {
+        backgroundColor: '#EB8973',
+        padding: 5,
+        borderRadius: 8,
+        width: 80
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 12,
+        fontWeight: 400,
+        textAlign: 'center',
     },
 
 }

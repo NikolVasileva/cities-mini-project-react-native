@@ -26,7 +26,7 @@ const styles = {
     title: {
         textAlign: "center", 
         fontSize: 30, 
-        fontWeight: 600,
+        fontWeight: "bold",
         marginBottom: 30,
         fontColor: "#000",
     },
