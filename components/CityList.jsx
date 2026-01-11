@@ -7,7 +7,7 @@ export default function CityList() {
     return (
         <View style={styles.body}>
             <Text style={styles.title}>Cities</Text>
-            <View>
+            <ScrollView style={{marginBottom: 70}}>
                 {data.cities.map(city => <CityCard 
                 key={city.id} 
                 title={city.title}
@@ -15,7 +15,7 @@ export default function CityList() {
                 country={city.country}
                 />
                 )}
-            </View>
+            </ScrollView>
         </View>
     )
 }
@@ -25,8 +25,8 @@ const styles = {
         textAlign: "center", 
         fontSize: 30, 
         fontWeight: 600,
-        paddingBottom: 30,
-        fontColor: "#EB8973"
+        marginBottom: 30,
+        fontColor: "#000",
     },
     body: {
         paddingTop: 70,
