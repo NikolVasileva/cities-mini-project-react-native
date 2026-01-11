@@ -3,18 +3,18 @@ import data from '../data.json';
 import CityCard from "./CityCard.jsx";
 
 
-export default function CityList({cityPressHandler}) {
+export default function CityList(props) {
     return (
         <View style={styles.body}>
             <Text style={styles.title}>Cities</Text>
             <ScrollView style={{marginBottom: 70}}>
-                {data.cities.map(city => <CityCard 
+                {props.cities.map(city => <CityCard 
                 key={city.id} 
                 id={city.id}
                 title={city.title}
                 image={city.image}
                 country={city.country}
-                onPress={cityPressHandler}
+                onPress={props.cityPressHandler}
                 />
                 )}
             </ScrollView>

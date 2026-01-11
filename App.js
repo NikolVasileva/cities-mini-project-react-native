@@ -9,7 +9,7 @@ export default function App() {
     alert(cityId)
 }
   return (
-    <CityList cityPressHandler={cityPressHandler}/>
+    <CityList cities={data.cities} cityPressHandler={cityPressHandler}/>
   );
 }
 
