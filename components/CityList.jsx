@@ -12,6 +12,7 @@ export default function CityList() {
                 key={city.id} 
                 title={city.title}
                 image={city.image}
+                country={city.country}
                 />
                 )}
             </View>
@@ -25,6 +26,7 @@ const styles = {
         fontSize: 30, 
         fontWeight: 600,
         paddingBottom: 30,
+        fontColor: "#EB8973"
     },
     body: {
         paddingTop: 70,
