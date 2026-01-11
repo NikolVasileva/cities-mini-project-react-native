@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
 import CityList from './components/CityList.jsx';
 import data from './data.json';
 import { useState } from 'react';
+import CityDetails from './components/CityDetails.jsx';
 
 export default function App() {
 
@@ -12,7 +11,7 @@ export default function App() {
     setSelectedCity(cityId)
 }
   return (
-    selectedCity ? alert("test") :
+    selectedCity ? <CityDetails /> :
     <CityList cities={data.cities} cityPressHandler={cityPressHandler}/>
   );
 }
