@@ -15,7 +15,7 @@ export default function CityDetails(props) {
             </View>
             <Text>Country: {props.city.country}</Text>
             <Text>{props.city.description}</Text>
-            <TouchableOpacity style={styles.button} onPress={() => onPress(id)}>
+            <TouchableOpacity style={styles.button} onPress={props.onClose}>
                 <Text style={styles.buttonText}>Go Back</Text>
             </TouchableOpacity>
         </View>

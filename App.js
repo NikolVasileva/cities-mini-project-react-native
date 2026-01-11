@@ -10,9 +10,14 @@ export default function App() {
   const cityPressHandler = (cityId) => {
     const city = data.cities.find(city => city.id === cityId)
     setSelectedCity(city)
-}
+  };
+  
+  const closeDetailsHandler = () => {
+    setSelectedCity(null)
+  }
+
   return (
-    selectedCity ? <CityDetails city={selectedCity}/> :
+    selectedCity ? <CityDetails city={selectedCity} onClose={closeDetailsHandler}/> :
     <CityList cities={data.cities} cityPressHandler={cityPressHandler}/>
   );
 }
