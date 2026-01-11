@@ -4,7 +4,8 @@ export default function CityCard({
     title,
     image,
     country,
-    onPress
+    onPress,
+    id
 }) {
     return (
         <View style={styles.card}>
@@ -21,7 +22,7 @@ export default function CityCard({
                 <Text style={styles.title}>{title}</Text>
                 <Text style={{paddingBottom: 10}}>{country}</Text>
 
-                <TouchableOpacity style={styles.button} onPress={onPress}>
+                <TouchableOpacity style={styles.button} onPress={() => onPress(id)}>
                     <Text style={styles.buttonText}>Details</Text>
                 </TouchableOpacity>
 

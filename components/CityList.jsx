@@ -10,6 +10,7 @@ export default function CityList({cityPressHandler}) {
             <ScrollView style={{marginBottom: 70}}>
                 {data.cities.map(city => <CityCard 
                 key={city.id} 
+                id={city.id}
                 title={city.title}
                 image={city.image}
                 country={city.country}
